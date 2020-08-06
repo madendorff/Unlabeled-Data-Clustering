@@ -1,4 +1,10 @@
 # Automated assistance of dimensional modeling on arbitrary datasets for data organization. #
+
+# Automated data organization through dimensional modeling on arbitrary datasets #
+
+A routine practice of clustering that often gets overlooked is visualizing the data to reveal the number of clusters / partitions the dataset has. By leveraging high-level visualization tools, data scientists are often able to eyeball the number of clusters they see fit. In doing so, data scientists can interpret the hidden relationships among features within a given dataset; however, not everyone has the power to do so. As companies become more data-driven in their decision-making, the importance for all employees to understand how to make data-driven decision grows.
+
+
 Start with a problem people try to solve. Routine piece of data science and BI that 
 Business Problem: Lots of people do these things by hand in data science. This is a tool that can help automate processes where businesspeople can organize data themselves
 An attempt at understanding relationships among features within a dataset through clustering techniques that do not mandate a pre-defined number of clusters.
