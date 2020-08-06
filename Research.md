@@ -16,7 +16,10 @@ I was exploring a space of data science with which I was unfamiliar, and apparen
 
 MENTION CRITERIA: run automatically, but may need to be adjusted by human. run interactively, user introduces dataset, so it needs to be relatively quick.
     
-## Data Transformations ##
+## Data Sourcing and Transformations ##
+In order for the hierarchical clustering to run without error on any arbitrary dataset, every dataset from every possible source needed to transform to the same data structure. Data was read from three main sources: local, HTTP, and SQL databases. Each source is shaped into a Pandas DataFrame. Additionally, the datatypes within each dataset are factorized to become numeric if they are not already, which is important for running the clustering algorithm and evaluating correlation matrices. Then, the correlations between each feature is calculated, being sure to not repeat calculations. That is, feature pair (X, Y) has the same correlation as feature pair (Y, X), so we can forgo calculating (Y, X).  
+
+
 talk about after clustering --> then explain the data to explain how I went about doing it.
     
 ## Heuristic Approach ##
